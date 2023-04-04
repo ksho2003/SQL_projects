@@ -1,0 +1,1430 @@
+mysql> /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql' at line 1
+mysql> /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql' at line 1
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC GLOBAL_LOCATIONS' at line 15
+mysql> tee /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.txt;
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC GLOBAL_LOCATIONS' at line 15
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Query OK, 0 rows affected, 2 warnings (0.21 sec)
+
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  |     | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+9 rows in set (0.07 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1050 (42S01): Table 'global_locations' already exists
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  |     | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+ERROR 1146 (42S02): Table 'megastore.megastore' doesn't exist
+mysql> USE megastore;
+Database changed
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1050 (42S01): Table 'global_locations' already exists
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  |     | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+ERROR 1146 (42S02): Table 'megastore.megastore' doesn't exist
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1050 (42S01): Table 'global_locations' already exists
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  |     | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| loc_id             | int         | NO   | PRI | NULL    |       |
+| loc_postal_code    | varchar(12) | NO   |     | NULL    |       |
+| loc_street_address | varchar(25) | NO   |     | NULL    |       |
+| loc_city           | varchar(25) | NO   |     | NULL    |       |
+| loc_state_province | varchar(25) | NO   |     | NULL    |       |
+| loc_country_id     | char(2)     | NO   |     | NULL    |       |
+| loc_type           | varchar(25) | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 12
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  |     | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+ERROR 1072 (42000): Key column 'loc_postal_code' doesn't exist in table
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 12
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  |     | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+Query OK, 0 rows affected (0.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  | UNI | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.00 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.02 sec)
+
+Query OK, 0 rows affected, 1 warning (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+ERROR 1060 (42S21): Duplicate column name 'date_open_location'
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.01 sec)
+
+ERROR 1054 (42S22): Unknown column 'TABLE_SCEMA' in 'where clause'
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+ERROR 1060 (42S21): Duplicate column name 'date_open_location'
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.00 sec)
+
++--------------------+-----------+
+| COLUMN_NAME        | DATA_TYPE |
++--------------------+-----------+
+| id                 | int       |
+| loc_name           | varchar   |
+| address            | varchar   |
+| city               | varchar   |
+| zip_postal_code    | varchar   |
+| phone              | varchar   |
+| email              | varchar   |
+| manager_id         | int       |
+| emergency_contact  | varchar   |
+| date_open_location | date      |
++--------------------+-----------+
+10 rows in set (0.00 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
+| date_opened        | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+11 rows in set (0.00 sec)
+
++--------------------+-----------+
+| COLUMN_NAME        | DATA_TYPE |
++--------------------+-----------+
+| id                 | int       |
+| loc_name           | varchar   |
+| address            | varchar   |
+| city               | varchar   |
+| zip_postal_code    | varchar   |
+| phone              | varchar   |
+| email              | varchar   |
+| manager_id         | int       |
+| emergency_contact  | varchar   |
+| date_open_location | date      |
+| date_opened        | date      |
++--------------------+-----------+
+11 rows in set (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
+| date_opened        | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+11 rows in set (0.00 sec)
+
++--------------------+-----------+
+| COLUMN_NAME        | DATA_TYPE |
++--------------------+-----------+
+| id                 | int       |
+| loc_name           | varchar   |
+| address            | varchar   |
+| city               | varchar   |
+| zip_postal_code    | varchar   |
+| phone              | varchar   |
+| email              | varchar   |
+| manager_id         | int       |
+| emergency_contact  | varchar   |
+| date_open_location | date      |
+| date_opened        | date      |
++--------------------+-----------+
+11 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.00 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
+| date_opened        | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+11 rows in set (0.00 sec)
+
++--------------------+-----------+
+| COLUMN_NAME        | DATA_TYPE |
++--------------------+-----------+
+| id                 | int       |
+| loc_name           | varchar   |
+| address            | varchar   |
+| city               | varchar   |
+| zip_postal_code    | varchar   |
+| phone              | varchar   |
+| email              | varchar   |
+| manager_id         | int       |
+| emergency_contact  | varchar   |
+| date_open_location | date      |
+| date_opened        | date      |
++--------------------+-----------+
+11 rows in set (0.00 sec)
+
+ERROR 1091 (42000): Can't DROP 'date_open_loaction'; check that column/key exists
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
+| date_opened        | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+11 rows in set (0.00 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
+| date_opened        | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+11 rows in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+ERROR 1060 (42S21): Duplicate column name 'date_opened'
++--------------------+-------------+------+-----+---------+-------+
+| Field              | Type        | Null | Key | Default | Extra |
++--------------------+-------------+------+-----+---------+-------+
+| id                 | int         | NO   | PRI | NULL    |       |
+| loc_name           | varchar(20) | YES  |     | NULL    |       |
+| address            | varchar(20) | YES  |     | NULL    |       |
+| city               | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code    | varchar(20) | YES  | UNI | NULL    |       |
+| phone              | varchar(15) | YES  |     | NULL    |       |
+| email              | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id         | int         | YES  |     | NULL    |       |
+| emergency_contact  | varchar(20) | YES  |     | NULL    |       |
+| date_open_location | date        | YES  |     | NULL    |       |
+| date_opened        | date        | YES  |     | NULL    |       |
++--------------------+-------------+------+-----+---------+-------+
+11 rows in set (0.00 sec)
+
++--------------------+-----------+
+| COLUMN_NAME        | DATA_TYPE |
++--------------------+-----------+
+| id                 | int       |
+| loc_name           | varchar   |
+| address            | varchar   |
+| city               | varchar   |
+| zip_postal_code    | varchar   |
+| phone              | varchar   |
+| email              | varchar   |
+| manager_id         | int       |
+| emergency_contact  | varchar   |
+| date_open_location | date      |
+| date_opened        | date      |
++--------------------+-----------+
+11 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  | UNI | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
+| date_opened       | date        | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.01 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  | UNI | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
+| date_opened       | date        | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+ERROR 1060 (42S21): Duplicate column name 'date_opened'
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  | UNI | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
+| date_opened       | date        | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.01 sec)
+
++-------------------+-----------+
+| COLUMN_NAME       | DATA_TYPE |
++-------------------+-----------+
+| id                | int       |
+| loc_name          | varchar   |
+| address           | varchar   |
+| city              | varchar   |
+| zip_postal_code   | varchar   |
+| phone             | varchar   |
+| email             | varchar   |
+| manager_id        | int       |
+| emergency_contact | varchar   |
+| date_opened       | date      |
++-------------------+-----------+
+10 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  | UNI | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+9 rows in set (0.00 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  | UNI | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+9 rows in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  | UNI | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
+| date_opened       | date        | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+10 rows in set (0.00 sec)
+
++-------------------+-----------+
+| COLUMN_NAME       | DATA_TYPE |
++-------------------+-----------+
+| id                | int       |
+| loc_name          | varchar   |
+| address           | varchar   |
+| city              | varchar   |
+| zip_postal_code   | varchar   |
+| phone             | varchar   |
+| email             | varchar   |
+| manager_id        | int       |
+| emergency_contact | varchar   |
+| date_opened       | date      |
++-------------------+-----------+
+10 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| id                | int         | NO   | PRI | NULL    |       |
+| loc_name          | varchar(20) | YES  |     | NULL    |       |
+| address           | varchar(20) | YES  |     | NULL    |       |
+| city              | varchar(20) | YES  |     | NULL    |       |
+| zip_postal_code   | varchar(20) | YES  | UNI | NULL    |       |
+| phone             | varchar(15) | YES  |     | NULL    |       |
+| email             | varchar(15) | YES  | UNI | NULL    |       |
+| manager_id        | int         | YES  |     | NULL    |       |
+| emergency_contact | varchar(20) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+9 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.01 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> USE megastore;
+Database changed
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.00 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1050 (42S01): Table 'employee_pay' already exists
+mysql> USE megastore;
+Database changed
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.00 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1050 (42S01): Table 'employee_pay' already exists
+mysql> DESC megastore;
+ERROR 1146 (42S02): Table 'megastore.megastore' doesn't exist
+mysql> SHOW TABLES;
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.02 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.00 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1050 (42S01): Table 'employee_pay' already exists
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.00 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1050 (42S01): Table 'employee_pay' already exists
+mysql> SHOW TABLES;
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.01 sec)
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.00 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1050 (42S01): Table 'employee_pay' already exists
+mysql> SHOW TABLES;
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.01 sec)
+
+mysql> mysql -u root –p --force --comments –vvv
+    -> 
+    -> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root –p --force --comments –vvv
+
+source /Users/kaileehigginsott/Des' at line 1
+mysql> 
+mysql> mysql -u root –p --force --comments –vvv  source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root –p --force --comments –vvv  source /Users/kaileehigginsott/Des' at line 1
+mysql>  -u root –p --force --comments –vvv
+    -> 
+    ->  -u root –p --force --comments –vvv
+    -> mysql -u root –p --force --comments –vvv  source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-u root –p --force --comments –vvv
+
+ -u root –p --force --comments –vvv
+' at line 1
+mysql> mysql -u root –p --force --comments –vvv  source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root –p --force --comments –vvv  source /Users/kaileehigginsott/Des' at line 1
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.01 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1050 (42S01): Table 'employee_pay' already exists
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.00 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO EMPLOYEE_PAY (employee_id, ssn, salary, hire_date)
+   VALUES (184167' at line 9
+Empty set (0.00 sec)
+
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| employee_id | int           | NO   | PRI | NULL    |       |
+| ssn         | char(1)       | YES  | UNI | NULL    |       |
+| salary      | decimal(10,0) | NO   |     | NULL    |       |
+| hire_date   | date          | NO   |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| employee_id | int           | NO   | PRI | NULL    |       |
+| ssn         | char(1)       | YES  | UNI | NULL    |       |
+| salary      | decimal(10,0) | NO   |     | NULL    |       |
+| hire_date   | date          | NO   |     | NULL    |       |
+| email       | char(30)      | YES  |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.00 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
++---------+--------------------+
+| catg_id | catg_desc          |
++---------+--------------------+
+| APL     | APPLIANCES         |
+| BK      | BOOKS              |
+| CEQ     | COMPUTER EQUIPMENT |
+| FU      | feurniture         |
+| GFD     | GOURMET FOOD       |
+| HD      | HARDWARE           |
+| HW      | HOUSEWARES         |
+| MUS     | MUSIC              |
+| PET     | PET SUPPLIES       |
+| SPG     | SPORTING GOODS     |
++---------+--------------------+
+10 rows in set (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.01 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO EMPLOYEE_PAY (employee_id, ssn, salary, hire_date)
+   VALUES (184167' at line 9
+Empty set (0.00 sec)
+
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| employee_id | int           | NO   | PRI | NULL    |       |
+| ssn         | char(1)       | YES  | UNI | NULL    |       |
+| salary      | decimal(10,0) | NO   |     | NULL    |       |
+| hire_date   | date          | NO   |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| employee_id | int           | NO   | PRI | NULL    |       |
+| ssn         | char(1)       | YES  | UNI | NULL    |       |
+| salary      | decimal(10,0) | NO   |     | NULL    |       |
+| hire_date   | date          | NO   |     | NULL    |       |
+| email       | char(30)      | YES  |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.00 sec)
+
+ERROR 1062 (23000): Duplicate entry 'FU' for key 'categories.PRIMARY'
++---------+--------------------+
+| catg_id | catg_desc          |
++---------+--------------------+
+| APL     | APPLIANCES         |
+| BK      | BOOKS              |
+| CEQ     | COMPUTER EQUIPMENT |
+| FU      | furniture          |
+| GFD     | GOURMET FOOD       |
+| HD      | HARDWARE           |
+| HW      | HOUSEWARES         |
+| MUS     | MUSIC              |
+| PET     | PET SUPPLIES       |
+| SPG     | SPORTING GOODS     |
++---------+--------------------+
+10 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.01 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO EMPLOYEE_PAY (employee_id, ssn, salary, hire_date)
+   VALUES (184167' at line 9
+Empty set (0.00 sec)
+
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| employee_id | int           | NO   | PRI | NULL    |       |
+| ssn         | char(1)       | YES  | UNI | NULL    |       |
+| salary      | decimal(10,0) | NO   |     | NULL    |       |
+| hire_date   | date          | NO   |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| employee_id | int           | NO   | PRI | NULL    |       |
+| ssn         | char(1)       | YES  | UNI | NULL    |       |
+| salary      | decimal(10,0) | NO   |     | NULL    |       |
+| hire_date   | date          | NO   |     | NULL    |       |
+| email       | char(30)      | YES  |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.00 sec)
+
+ERROR 1062 (23000): Duplicate entry 'FU' for key 'categories.PRIMARY'
++---------+--------------------+
+| catg_id | catg_desc          |
++---------+--------------------+
+| APL     | APPLIANCES         |
+| BK      | BOOKS              |
+| CEQ     | COMPUTER EQUIPMENT |
+| FU      | furniture          |
+| GFD     | GOURMET FOOD       |
+| HD      | HARDWARE           |
+| HW      | HOUSEWARES         |
+| MUS     | MUSIC              |
+| PET     | PET SUPPLIES       |
+| SPG     | SPORTING GOODS     |
++---------+--------------------+
+10 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.02 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO EMPLOYEE_PAY (employee_id, ssn, salary, hire_date)
+   VALUES (184167' at line 9
+Empty set (0.00 sec)
+
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| employee_id | int           | NO   | PRI | NULL    |       |
+| ssn         | char(1)       | YES  | UNI | NULL    |       |
+| salary      | decimal(10,0) | NO   |     | NULL    |       |
+| hire_date   | date          | NO   |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| employee_id | int           | NO   | PRI | NULL    |       |
+| ssn         | char(1)       | YES  | UNI | NULL    |       |
+| salary      | decimal(10,0) | NO   |     | NULL    |       |
+| hire_date   | date          | NO   |     | NULL    |       |
+| email       | char(30)      | YES  |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.00 sec)
+
+ERROR 1062 (23000): Duplicate entry 'FU' for key 'categories.PRIMARY'
++---------+--------------------+
+| catg_id | catg_desc          |
++---------+--------------------+
+| APL     | APPLIANCES         |
+| BK      | BOOKS              |
+| CEQ     | COMPUTER EQUIPMENT |
+| FU      | furniture          |
+| GFD     | GOURMET FOOD       |
+| HD      | HARDWARE           |
+| HW      | HOUSEWARES         |
+| MUS     | MUSIC              |
+| PET     | PET SUPPLIES       |
+| SPG     | SPORTING GOODS     |
++---------+--------------------+
+10 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> source /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment4.sql;
+Database changed
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+Empty set (0.00 sec)
+
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1146 (42S02): Table 'megastore.global_locations' doesn't exist
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO EMPLOYEE_PAY (employee_id, ssn, salary, hire_date)
+   VALUES (184167' at line 9
+Empty set (0.00 sec)
+
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| employee_id | int           | NO   | PRI | NULL    |       |
+| ssn         | char(1)       | YES  | UNI | NULL    |       |
+| salary      | decimal(10,0) | NO   |     | NULL    |       |
+| hire_date   | date          | NO   |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| employee_id | int           | NO   | PRI | NULL    |       |
+| ssn         | char(1)       | YES  | UNI | NULL    |       |
+| salary      | decimal(10,0) | NO   |     | NULL    |       |
+| hire_date   | date          | NO   |     | NULL    |       |
+| email       | char(30)      | YES  |     | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
++-------------------------+
+| Tables_in_megastore     |
++-------------------------+
+| categories              |
+| credit_ratings          |
+| cust_address            |
+| customers               |
+| departments             |
+| EMPLOYEE_PAY            |
+| employees               |
+| GLOBAL_LOCATIONS_BACKUP |
+| inventory               |
+| jobs                    |
+| locations               |
+| order_details           |
+| orders                  |
+| products                |
+| shipping_modes          |
+| warehouses              |
++-------------------------+
+16 rows in set (0.00 sec)
+
+ERROR 1062 (23000): Duplicate entry 'FU' for key 'categories.PRIMARY'
++---------+--------------------+
+| catg_id | catg_desc          |
++---------+--------------------+
+| APL     | APPLIANCES         |
+| BK      | BOOKS              |
+| CEQ     | COMPUTER EQUIPMENT |
+| FU      | furniture          |
+| GFD     | GOURMET FOOD       |
+| HD      | HARDWARE           |
+| HW      | HOUSEWARES         |
+| MUS     | MUSIC              |
+| PET     | PET SUPPLIES       |
+| SPG     | SPORTING GOODS     |
++---------+--------------------+
+10 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> tee /Users/kaileehigginsott/Desktop/my_scripts/khigginsott_assignment5.txt;
